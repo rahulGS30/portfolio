@@ -30,7 +30,7 @@ body{
 
 }
 .container .text.first-text{
-    color: rgb(249, 250, 250);
+    color: white;
     font-size: 40px;
 }
 .text.sec-text:before{
@@ -44,15 +44,6 @@ body{
     text-align: justify;
     border-left: 2px ;
     animation: animate 4s steps(12) infinite;
-}
-
-@keyframes animate{
-    40%,60%{
-        left: calc(100% + 4px);
-    }
-    100%{
-        left: 0%;
-    }
 }
 #intro{
     margin: 0;
@@ -73,30 +64,11 @@ section{
     justify-content: space-evenly;
 }
 .main-container .image img{
-    width: 400px;
-    height: 70vh;
+    width: 360px;
+    height: 50vh;
     overflow: hidden;
-    border-radius: 50%;
     object-fit: cover;
-    border: 4px solid black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-.main-container .image:hover{
-    animation: animate 1.5s ease-in-out infinite;
-}
-
-@keyframes animate{
-    0%{
-        scale: 1;
-    }
-    50%{
-        scale: 1.05;
-    }
-    100%{
-        scale: 1;
-    }
-
+    border-radius: 50%;
 }
 .main-container .content{
     color: white;
@@ -104,10 +76,11 @@ section{
     min-height: 100px;
 }
 .container h1{
-    font-size: clamp(1rem, 1rem+5vw,1.8rem);
+    font-size: clamp(1rem, 1rem+5vw,1rem);
 }
-.container h1 span{
-    font-size: clamp(1rem, 1rem+5vw,1.8rem);
+#H1{
+    color: #f6f9f7;
+    text-shadow: 0  0 10px #eff4f1;
 }
 .content .typrwriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
@@ -115,6 +88,10 @@ section{
 }
 .content.typewriter-text{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+}
+.content p{
+    font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
+    margin: 10px 0;
 }
 
 .social-links i{
@@ -137,6 +114,58 @@ section{
 .social-links i:hover{
     scale: 1.3;
     color: black;
-    background-color: white;
     filter: drop-shadow(0 0 10px white);
+}
+
+.content button{
+    width: 80%;
+    height: 5vh;
+    margin: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+.content button:hover{
+    scale: 1.1;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px white;
+
+}
+
+@media(max-width:884px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container .image{
+        margin-top: 130px;
+    }
+    .content{
+        margin-left: 0px;
+    }
+    .hamburg .cancel
+    {
+        display: block;
+    }
+    .main-container content{
+        width: 80%;
+    }
+    .main-container.image{
+        z-index: -1;
+        width: 50%;
+        height: 60%;
+    }
+}
+@media(max-width:440px){
+    .main-container .content{
+        width: 80%;
+    }
 }
