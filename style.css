@@ -5,7 +5,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.container{
+.container{   
     padding-top: 20px;
 }
 
@@ -65,7 +65,7 @@ section{
 }
 .main-container .image img{
     width: 360px;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     object-fit: cover;
     border-radius: 50%;

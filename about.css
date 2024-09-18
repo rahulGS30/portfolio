@@ -1,0 +1,88 @@
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    padding-top: 20px;
+}
+
+#offcanvasNavbar{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(50px);
+}
+#rahul{
+    font-size: 25px;
+    font-weight: 400;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600&display=swap");
+.container{
+    width: 246px;
+    overflow: hidden;
+    margin: 0;
+
+}
+.text{
+    font-size: 40px;
+    position: relative;
+
+}
+.container .text.first-text{
+    color: white;
+    font-size: 40px;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;  
+    background-color: rgb(4, 4, 4);
+    text-align: justify;
+    border-left: 2px ;
+    animation: animate 4s steps(12) infinite;
+}
+#intro{
+    margin: 0;
+    padding: 0;
+}
+.content-section{
+    position: relative;
+    padding-top: 50px;
+}
+#about{
+    position: absolute;
+    display: flex;
+    top: 60px;
+    margin-left: 110px;
+    margin-bottom: 200px;
+    color: white;
+}
+.para{
+    display: flex;
+    color: white;
+    text-align: justify;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 20px;
+}
+@media(max-width:440px){
+    .para{
+        display: flex;
+        color: white;
+        text-align: justify;
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 20px;
+    }   
+    #about{
+        margin-left: 40px;
+    }
+}
+
+
